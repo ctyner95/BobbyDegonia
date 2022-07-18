@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.outer-container {
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+}
+
+#mobile-logo {
+    display: block;
+    margin: auto;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #0d0d0d;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .topnav a {
+    color: #5C1C09;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+    display: block;
+    text-align: center;
+  }
+
+  .topnav a.icon {
+    margin-top: 20px;
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #0d0d0d;
+  }
+
+  .active {
+    background-color: black ;
+    color: white;
+}
+
+.first-panel {
+    width: 100%;
+    height: 70vh;
+    /*background-image: url("Photos/BobbyTree.jpeg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.single-hdr {
+  font-size: 45px;
+  color:#5C1C09
+}
+
+.music {
+  height: 30%;
+  background-color: blue;
+}
+
+.shows {
+  height: 70%;
+  background-color: red;
+}
+
+.about {
+  background: url("Photos/Bobby DeGonia2.jpg") no-repeat fixed center;
+  background-position: cover;
+  padding: 20px;
+  height: 500px;
+  color: white;
+  text-align: center;
+}
+
+.video {
+height: 40%;
+background-color: green;
+}
+
+.shop {
+  height: 70%;
+  background-color: orange;
+}
+
+
+

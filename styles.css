@@ -1,19 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Raleway:wght@600&family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
+    border-radius: 10px;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Big Shoulders Display', 'Roboto', sans-serif;
+    background-color: #0d0d0d;
 }
 
 .outer-container {
     width: 100%;
     height: 100vh;
+    max-width: 95%;
+    margin: auto;
 }
 
 .header {
@@ -21,60 +25,40 @@ body {
     height: 120px;
     background-color: black;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
-#mobile-logo {
-    display: block;
-    margin: auto;
-}
-
 .logo {
-    width: 200px;
-    height: 110px;
-    padding: 0;
+  width: 200px;
+  height: 110px;
+  padding: 0;
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: #0d0d0d;
-    position: relative;
-  }
-  
-.topnav #myLinks {
-   display: none;
+.nav-links {
+  display: flex;
+  list-style: none;  
 }
 
-.topnav a {
-  color: #5C1C09;
-  padding: 10px 16px;
+.nav-item:not(:first-of-type) {
+  margin-left: 1.5em;
+}
+
+.navlink {
+  color: #862b23;
   text-decoration: none;
-    font-size: 32px;
-    font-weight: 700;
-    display: block;
-    text-align: center;
-  }
+  font-weight: 600;
+  font-size: 35px;
+  flex: 0 1 50%;
+}
 
-  .topnav a.icon {
-    margin-top: 20px;
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav a:hover {
-    background-color: #0d0d0d;
-  }
-
-  .active {
-    background-color: black ;
-    color: white;
+.navlink:hover {
+  color: antiquewhite
 }
 
 .single-container {
+  margin: 30px 0 ;
   height: 70vh;
-  margin: 20px 0px;
   display: flex;
 }
 
@@ -97,10 +81,12 @@ body {
   font-size: 24px;
   color:antiquewhite;
 }
+
 .right-single > p {
   font-size: 28px;
   font-style: italic;
 }
+
 .links-container {
   text-align: center;
 }
@@ -150,4 +136,81 @@ body {
   height: 44px;
   width: 44px;
   padding: 10px;
+}
+
+.about {
+  margin: 30px 0;
+  height: 100vh;
+  display: flex;
+  background-color: #862b23;
+}
+
+.about-text-container {
+  width: 50%;
+  color: antiquewhite;
+  padding: 50px;
+}
+
+.about-text-container > h3 {
+  font-size: 32px;
+  padding: 40px;
+  text-align: center;
+  color: antiquewhite;
+  text-decoration: underline;
+  background-color: #862b23;
+}
+
+.about-text-container > p {
+  font-size: 20px;
+}
+
+.about-img {
+  height: 100%
+}
+
+.video {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch {
+  height: 30vh;
+  font-size: 50px;
+  background-color: #862b23;
+  border-radius: 10px;
+  color: antiquewhite;
+  text-align: center;
+}
+
+footer {
+  margin: 30px 0;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.bobbymusic {
+  color: antiquewhite;
+  margin: 0 70px;
+  font-size: 18px;
+}
+.webdesign {
+  text-decoration: none;
+  color: whitesmoke
+}
+
+
+.follow {
+  font-size: 20px;
+  color: antiquewhite;
+}
+
+.social { 
+  width: 30px;
+  height: 30px;
+  padding: 0 15px;
 }
